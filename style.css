@@ -1,10 +1,11 @@
-html {
+html, body {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 22px;
     color: seashell;
     background-color: black;
     opacity: 0.9;
-    padding:3.75%;
+    padding: 0px;
+    margin: 0px;
 }
 
 /* HEADER */
@@ -41,7 +42,6 @@ nav a {
     background-repeat: no-repeat;
     background-size: cover;
     height: 700px;
-    padding-top: 0;
 }
 
 section h2, h4 {
@@ -53,15 +53,40 @@ section h2, h4 {
 
 /* SECTION 2 */
 
-.two {
-    width: 1000px;
-}
-
 .grid {
     display: grid;
+    justify-content: center;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 80% 20%;
     text-align: center;
     gap: 10px;
-    padding-bottom: 2em;
+    width: 1000px;
+}
+
+/* SECTION 3 */
+
+.gridtwo {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 80% 20%;
+    text-align: center;
+    gap: 10px;
+    width: 1000px;
+}
+
+/* SECTION 4 */
+
+.location {
+    background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-locations-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+/* FOOTER */
+
+footer section {
+    text-align: center;
 }
