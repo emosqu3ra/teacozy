@@ -15,41 +15,59 @@ header {
     padding-right: 10px;
     border-bottom: 1px solid seashell;
     height: 69px;
-    display:flex;
-    position: fixed;
+    display:block;
     background-color: black;
     width: 100%;
-    align-items: center;
+    position: fixed;
+    top: 0px;
 }
 
 /* NAV BAR */
 
-nav li {
-    list-style-type: none;
-    display: inline-flex;
+.logo {
+    height:50px;
+    float: left;
+    margin: 5px;
+}
+
+nav ul li {
+    float: right;
+    height: 100%;
+    margin: 0 auto;
+    list-style: none;
 }
 
 nav a {
+    text-decoration: none;
     color: seashell;
-    text-decoration: underline;
+    margin-left: 15px;
+    display: table;
+    height: 100%;
+    float: left;
+    padding: 0px 20px;
 }
 
-/* SECTION 1 */
+/* MAIN */
 
-.background {
+.background_container {
     background-image: url("https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 700px;
+    max-width: 1200px;
+    margin: 40px auto 40px auto;
+    display: flex;
 }
 
-section h2, h4 {
-    align-items: center;
+.text-over {
+    position: relative;
     text-align: center;
-    padding: 0;
+    color: white;
+    margin: auto;
     background-color: black;
-}
+    width: 100%;
+  }
 
 /* SECTION 2 */
 
